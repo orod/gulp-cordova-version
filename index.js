@@ -31,7 +31,7 @@ module.exports = function(version, versionCodes) {
     }, function(cb) {
         try {
             // Load the config.xml file
-            var config = new Config(path.join(project.path, 'config.xml'));
+            var config = new Config(path.join(project.path));
 
 			// Sets the version
             config.setVersion(version);
